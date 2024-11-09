@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--Login page for the users-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+</head>
+<body>
+
+  <!--Banner-->
+
+  <!--banner was madd by Priyanka Jagdipsingh using Adobe logo maker-->
+
+  <div class="banner">
+    <img src="../images/photoshare_banner.png" width="1100" height="350" alt="An image of the PhotoShare logo.">
+  </div>
+
+  <br><br>
+
+  <h1 class="header_center">Welcome Back!</h1>
+
+  <br><br><br>
+
+  <form 
+  id="login_frm"
+  method="post"
+  action="../php/verify_login.php">
+    <fieldset>
+      <legend>User Information</legend>
+
+      <input type="text" id="user_name" name="user_name" placeholder="Username">
+
+      <br><br>
+
+      <input type="password" id="password" name="password" placeholder="Password">
+    </fieldset>
+
+    <br>
+
+    <input type="submit" name="submit" value="Login">
+  </form>
+
+  <br><br><br>
+
+  <p id="log_para">If you do not have an account, click <a href="../php/reg_form.php">here</a> to sign up.</p>
+</body>
+</html>

@@ -1,0 +1,301 @@
+html {
+  font-family: Gravity, "Open Sans";
+  background-color: #8E9DCC;
+}
+
+/*page layout for the entire website - box model*/
+
+body {
+  width: 1100px;
+  margin: auto;
+}
+
+/*navigation bar*/
+
+.nav1, .nav2 {
+  font-family: 'Lemon Milk';
+  font-size: 20px;
+  clear:both;
+  overflow: hidden;
+}
+
+.nav1 ul, .nav2 ul {
+  list-style-type: none;
+}
+
+.nav1 ul li {
+  float: left;
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
+.nav1 ul li a, .nav2 ul li a {
+  padding: 0.25em 1em 1em;
+  text-decoration: none;
+  color: #021d28; 
+  text-align: center;
+  display: block;
+}
+
+#log, #reg, #profile, #log_out {
+  float: right;
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+#home {
+  font-family: 'Lobster 1.4';
+  font-size: 25px;
+}
+
+#search_frm {
+  float: right;
+}
+
+#search {
+  /*float: right;*/
+  margin-right: 35px;
+  width: 160px;
+}
+
+#search_btn {
+  width: 100px;
+}
+
+.nav2 {
+  background-color: #7D84B2;
+}
+
+.nav2 ul li {
+  float: left;
+  margin-right: 95px;
+}
+
+.nav1 ul li a:hover, .nav1 ul li a:focus, .nav2 ul li a:hover, .nav2 ul li a:focus {
+  color: #061826; 
+  background-color: #CFCFEA; 
+  font-weight: bold;
+}
+
+/*dropdown button code comes from:*/
+
+/*W3Schools. (n.d.). How to - hoverable dropdown. How To Create a Hoverable Dropdown Menu. https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.dropdown {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+  background-color: #7D84B2;
+}
+
+.drp_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.drp_content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drp_content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .drp_content {
+  display: block;
+}
+
+h1 {
+  font-family: Vogue;
+}
+
+.header_center {
+  text-align: center;
+  font-size: 45px;
+}
+
+/*index content style*/
+
+.about {
+  font-family: Gravity;
+}
+
+#paragraph1 {
+  font-size: 35px;
+  padding: 50px;
+}
+
+#paragraph2 {
+  font-size: 35px;
+  padding: 50px 25px;
+}
+
+#paragraph3 {
+  font-size: 35px;
+  padding: 20px;
+}
+
+#img1 {
+  float:right;
+  padding: 10px;
+}
+
+#img2 {
+  float:left;
+  padding: 10px;
+}
+
+#img3, #img4, #img5 {
+  float:right;
+  padding: 10px;
+}
+
+/*Registration, Login form, and Update form*/
+
+#register, #login_frm, #update {
+  width: 400px;
+  /*height: 655px;*/
+  margin: auto;
+}
+
+#log_para {
+  text-align: center;
+}
+
+/*Post form and Contact form*/
+
+#postfrm, #contact {
+  width: 400px;
+}
+
+#contact_para {
+  float: right;
+  margin-left: 250px;
+  margin-right: 150px;
+}
+
+/*logout button*/
+
+#log_out {
+  background-color: #8E9DCC;
+}
+
+/*style for all forms*/
+
+#register, #login_frm, #update, #postfrm, #contact {
+  padding: 10px;
+  font-family: 'Century Gothic';
+  background-color: #D4C5E2;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number], input[type='tel'] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+input[type=submit] {
+  width: 100px;
+  height: 35px;
+  clear: both;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 5px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.form_para {
+text-align: center;
+color: black;
+font-size: 15px;
+margin-top: 40px;
+padding: 15px;
+}
+
+#reg_sign {
+  text-align: center;
+}
+
+/*gallery*/
+
+/*Base code for image gallery
+W3Schools. (n.d.). CSS Image Gallery. CSS image gallery. https://www.w3schools.com/css/css_image_gallery.asp . Retrieved 21st Oct. 2023.*/
+
+/*CSS box shadow code: 
+W3Schools. (n.d.). CSS box shadow. https://www.w3schools.com/css/css3_shadows_box.asp . Retrieved 22nd Oct. 2023.*/
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 500px;
+  padding: 10px;
+  background-color: #8E9DCC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.caption {
+  padding: 5px;
+  text-align: center;
+}
+
+div.author {
+  float: left;
+  font-family: 'Franklin Gothic Book';
+}
+
+div.date {
+  float: right;
+  font-family: 'Courier New';
+}
+
+/*comment section*/
+
+#comment {
+  padding: 5px;
+}
+
+#comment_section {
+  width: 450px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+/*user profile page*/
+
+.user_profile {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #D4C5E2;
+}
+
+/*footer*/
+
+.footer {
+  padding: 10px;
+  font-family: "Franklin Gothic Book";
+  clear: both;
+  text-align: center;
+}

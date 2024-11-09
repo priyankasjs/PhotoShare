@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+</head>
+<body class="box">
+
+   <!--Banner-->
+
+   <div class="banner">
+    <img src="../images/photoshare_banner.png" width="1099" alt="An image of the PhotoShare logo.">
+  </div>
+
+
+  <br><br>
+
+  <p>We value our users' opinions, if there is any issue you are facing or anything to improve the user experience, we will love to hear it!</p>
+
+  <br><br>
+
+  <div id="contact_para">
+    <p>Amature Photography Association:</p>
+    
+       <ul>
+          <li>Email: amaturephotoassoc@gmail.com</li>
+          <li>Twitter/X: @Amature_Assoc_twt</li>
+          <li>Tumblr: apablr</li>
+       </ul>
+</div>
+
+  <!--Contact form-->
+
+  <div id="contact">
+  <form id="contact_frm" action="../php/contact.php" method="post">
+    <fieldset>
+      <legend><strong>User Information</strong></legend>
+
+      <input type="text" id="user_name" name="user_name" placeholder="Username" required>
+
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>User Feedbaack</strong></legend>
+
+      <textarea name="feedback" rows="5" cols="30" placeholder="Put your feedback or complaints here..." maxlength="300"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="SUBMIT">
+  </form>
+  </div>
+
+  <br><br><br><br><br>
+
+   <!--Footer-->
+   <div class="footer">
+    <footer>
+      <p>&copy; 2023 PhotoShare</p>
+    </footer>
+  </div>
+
+ 
+</body>
+</html>
